@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class WeaponFire : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public float damage = 1f;
+    public float range = 150;
+    public Camera PlayerCamera;
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out hit, range)) 
+        {
+            Debug.Log(hit.transform.name);
+        }
     }
 }
