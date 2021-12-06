@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponFire : MonoBehaviour
 {
-    public float damage = 1f;
+    public float damageAmount = 1f;
     public float range = 150;
     public Camera PlayerCamera;
     
@@ -23,6 +23,12 @@ public class WeaponFire : MonoBehaviour
         if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out hit, range)) 
         {
             Debug.Log(hit.transform.name);
+            
+            HuntingTarget target = hit.transform.GetComponent<HuntingTarget>();
+            if (target != null)
+            {
+                target.DamageReceived(damageAmount);
+            }
         }
     }
 }

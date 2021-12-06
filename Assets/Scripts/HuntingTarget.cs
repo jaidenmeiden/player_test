@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class HuntingTarget : MonoBehaviour
 {
     public float health = 3f;
 

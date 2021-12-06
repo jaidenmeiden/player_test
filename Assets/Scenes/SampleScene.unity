@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 533010139}
   - component: {fileID: 533010138}
   m_Layer: 0
-  m_Name: Target
+  m_Name: HuntingTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb8ef1af7d60074aaf571f6759fdd43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damageAmount: 1
   range: 150
   PlayerCamera: {fileID: 963194227}
 --- !u!1 &1842232901
