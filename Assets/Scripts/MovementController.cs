@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public CharacterController controller;
+    public float speed = 20f;
+    
     // Update is called once per frame
     void Update()
     {
-        
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 movement = transform.right * x + transform.forward * z;
+        controller.Move(movement * speed * Time.deltaTime);
     }
 }
