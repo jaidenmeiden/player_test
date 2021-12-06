@@ -518,6 +518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819599383}
+  - component: {fileID: 1819599386}
   - component: {fileID: 1819599382}
   - component: {fileID: 1819599381}
   - component: {fileID: 1819599380}
@@ -640,6 +641,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1819599384}
   speed: 20
+--- !u!114 &1819599386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819599379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb8ef1af7d60074aaf571f6759fdd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  range: 150
+  PlayerCamera: {fileID: 963194227}
 --- !u!1 &1842232901
 GameObject:
   m_ObjectHideFlags: 0
